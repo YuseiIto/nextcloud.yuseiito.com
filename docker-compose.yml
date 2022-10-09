@@ -23,6 +23,7 @@ services:
       - NEXTCLOUD_ADMIN_PASSWORD
       - REDIS_HOST=redis
       - REDIS_HOST_PASSWORD
+      - REDIS_HOST_PORT=63790
   db:
     image: postgres
     ports: 
@@ -36,6 +37,6 @@ services:
     image: redis:latest
     restart: always
     ports:
-      - 6379:6379
+      - 63790:6379
     command: >
           --requirepass ${REDIS_HOST_PASSWORD}
