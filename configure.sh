@@ -1,4 +1,4 @@
-OCC = docker-compose exec --user www-data app php occ 
+OCC='docker compose exec --user www-data app php occ'
 $OCC config:system:set default_phone_region --type string --value "JP"
 $OCC config:system:set default_locale --type string --value "ja_JP"
 $OCC config:system:set default_language --type string --value "ja"
