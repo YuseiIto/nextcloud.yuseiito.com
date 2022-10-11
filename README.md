@@ -37,7 +37,7 @@ sh ./configure.sh
 5. Configure cron process
 
 ```zsh
-crontab -e # Insert `*/5 * * * * /usr/bin/docker exec --user www-data negicloud-infra-app-1 php cron.php` 
+crontab -e # Insert `*/5 * * * * /usr/bin/docker exec --user www-data nextcloudyuseiitocom-app-1 php cron.php` 
 ```
 
 6. Configure Email (Uses sendgrid)
